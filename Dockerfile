@@ -1,3 +1,3 @@
 FROM composer:latest
 
-RUN pecl install xdebug && docker-php-ext-install xdebug
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community php7-xdebug
