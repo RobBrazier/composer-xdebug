@@ -1,3 +1,3 @@
 FROM composer:latest
 
-RUN docker-php-ext-install xdebug
+RUN apk add php7-xdebug && docker-php-ext-install xdebug
